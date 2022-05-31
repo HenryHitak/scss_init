@@ -17,3 +17,10 @@
   flex-direction: column;
   row-gap: $rowGap;
 }
+
+@mixin mobileSection($rowGap: 20px) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: $rowGap;
+}
