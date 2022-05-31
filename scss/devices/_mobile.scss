@@ -1,0 +1,77 @@
+@media (min-width: 300px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+
+    & > div {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > h2 {
+      border-bottom: 2px solid $defaultColor;
+    }
+
+    > form {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input,
+    textarea {
+      border: 1px solid gainsboro;
+      padding: 3%;
+    }
+
+    textarea {
+      height: 30vh;
+      font-size: 20px;
+    }
+
+    [type="submit"] {
+      background-color: $defaultColor;
+      color: whitesmoke;
+      font-size: 18px;
+    }
+  }
+
+  .projects {
+    @include flexColumnMobile;
+
+    > h2 {
+      border-bottom: 2px solid $defaultColor;
+    }
+
+    > article {
+      @include flexColumnMobile;
+    }
+
+    .education {
+      @include flexColumnMobile2(0);
+    }
+
+    > h2 {
+      border-bottom: 2px solid $defaultColor;
+    }
+
+    [alt="Tokyo University"] {
+      padding: 5%;
+    }
+  }
+}

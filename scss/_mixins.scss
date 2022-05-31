@@ -1,0 +1,19 @@
+@mixin flexColumnMobile {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+}
+
+@mixin flexColumnMobile2($rowGap) {
+  display: flex;
+  flex-direction: column;
+  row-gap: $rowGap;
+  align-items: center;
+}
+
+@mixin flexColumnMobile3($rowGap: 25px) {
+  display: flex;
+  flex-direction: column;
+  row-gap: $rowGap;
+}

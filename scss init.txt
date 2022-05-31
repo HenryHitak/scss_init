@@ -1,0 +1,33 @@
+1. copy every file from the last class except css.
+
+2. open vs code
+
+3. go to app? things -> and download live scss bla bla
+
+4. create style.scss and type it like that, and _variable, and _normalize.scss
+
+don't forget to go to settings formats
+
+edit in settings.json 
+have to be like this you will only have the first part.
+
+  "liveSassCompile.settings.formats": [
+    
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    },
+
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/css"
+    }
+  ],
+
+and then create scss file things.
+
+after that go to down wherethe bar is watching.
+
+it should be like that and should bring all the contents and update (automatically make css folder with files)
