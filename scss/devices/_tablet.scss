@@ -1,0 +1,14 @@
+@media (min-width: 600px) {
+  nav {
+    display: flex;
+    justify-content: center;
+
+    details {
+      width: 50%;
+    }
+  }
+
+  footer i {
+    font-size: 25px;
+  }
+}
